@@ -1,5 +1,5 @@
 ---
-title: 'The Coronation: India’s 2026 Triumph and the New Cricket Order'
+title: "The Coronation: India’s 2026 Triumph and the New Cricket Order"
 date: 2026-03-09
 description: 'Analyzing the strategic shift in global T20 cricket following India's historic victory over New Zealand.'
 tags: ["Cricket", "T20 World Cup", "Sports Analytics", "India"]
