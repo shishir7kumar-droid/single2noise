@@ -7,8 +7,6 @@ theme = 'PaperMod'
   disableJSON = true
 
 [params]
-    showCodeCopyButtons = true
-    # ... (the rest of your params)
     # Aesthetic & Branding
     defaultTheme = 'dark'
     showCodeCopyButtons = true
@@ -18,18 +16,26 @@ theme = 'PaperMod'
     ShowBreadCrumbs = true
     ShowToc = true
     
-    # Favicon & Logo Placeholders
-    label = { text = "Signal2Noise", icon = "/favicon.ico" }
-    assets = { favicon = "/favicon.ico" }
+    # Fix for PaperMod Schema build error
+    [params.schema]
+      enabled = true
+
+    # Favicon & Logo
+    [params.label]
+        text = "Signal2Noise"
+        icon = "/favicon.ico"
+
+    [params.assets]
+        favicon = "/favicon.ico"
 
     # Home-Info Mode (Investigative Profile)
     [params.homeInfoParams]
         Title = "Signal2Noise // Research & Analysis"
         Content = """
-        Welcome to the Signal2Noise archives. 
-        Focusing on high-signal data, investigative research, and technical deep-dives. 
-        *Scanning for anomalies...*
-        """
+Welcome to the Signal2Noise archives. 
+Focusing on high-signal data, investigative research, and technical deep-dives. 
+*Scanning for anomalies...*
+"""
 
     # Social Icons
     [[params.socialIcons]]
@@ -45,16 +51,19 @@ theme = 'PaperMod'
     name = "Home"
     url = "/"
     weight = 10
+
 [[menu.main]]
     identifier = "archive"
     name = "Archive"
     url = "/archives"
     weight = 20
+
 [[menu.main]]
     identifier = "research"
     name = "Research"
     url = "/posts"
     weight = 30
+
 [[menu.main]]
     identifier = "about"
     name = "About"
