@@ -7,8 +7,6 @@ theme = 'PaperMod'
   disableJSON = true
 
 [params]
-    # Aesthetic & Branding
-    defaultTheme = 'dark'
     showCodeCopyButtons = true
     # ... (the rest of your params)
     # Aesthetic & Branding
