@@ -1,0 +1,57 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Signal2Noise'
+theme = 'PaperMod'
+
+[params]
+    # Aesthetic & Branding
+    defaultTheme = 'dark'
+    showCodeCopyButtons = true
+    ShowReadingTime = true
+    ShowShareButtons = true
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowToc = true
+    
+    # Favicon & Logo Placeholders
+    label = { text = "Signal2Noise", icon = "/favicon.ico" }
+    assets = { favicon = "/favicon.ico" }
+
+    # Home-Info Mode (Investigative Profile)
+    [params.homeInfoParams]
+        Title = "Signal2Noise // Research & Analysis"
+        Content = """
+        Welcome to the Signal2Noise archives. 
+        Focusing on high-signal data, investigative research, and technical deep-dives. 
+        *Scanning for anomalies...*
+        """
+
+    # Social Icons
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/"
+    [[params.socialIcons]]
+        name = "twitter"
+        url = "https://twitter.com/"
+
+# Navigation Menu
+[[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+[[menu.main]]
+    identifier = "archive"
+    name = "Archive"
+    url = "/archives"
+    weight = 20
+[[menu.main]]
+    identifier = "research"
+    name = "Research"
+    url = "/posts"
+    weight = 30
+[[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 40
